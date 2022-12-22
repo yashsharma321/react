@@ -52,7 +52,7 @@ li{
   color: white;
   text-decoration: none;
 }
-.pagelink:+hover {
+.pagelink:hover {
   color: orange;
 }
 

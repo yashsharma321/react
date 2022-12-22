@@ -5,7 +5,7 @@ let allservices = [
     },
     {
         category: 'Marketing',
-        data: ["Sales", "BPO", "Banking", "Education"]
+        data: ["Sales", "BPO", "Banking", "Education", "FMCG"]
     }
 ];
 

@@ -7,7 +7,9 @@ const ContactUs = () => {
         {name: "Mohan", age: 35, city: "Ranchi", edu: "B.tech" },
         {name: "Mohit", age: 34, city: "Vellore", edu: "B.tech" },
         {name: "Vinay", age: 32, city: "Gangtok", edu: "B.tech" }
-    ]
+    ];
+// Array of objects
+
     return(
         <div className="container">
             <h1>Total customer: {customer.length}</h1>
