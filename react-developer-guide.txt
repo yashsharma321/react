@@ -48,3 +48,27 @@
                 <p>fjkb wfviuerh viuer viuhviu eviehv iveiuovnie rviuevh </p>,
                 <p>fjkb wfviuerh viuer viuhviu eviehv iveiuovnie rviuevh </p>
             ]
+
+----------------------------------------------------------------
+
+* npm install react-router-dom *
+
+under App.js :-)
+import {HashRouter, Link, Routes, Route} from 'react-router-dom';
+
+    1.HashRouter needs Link as child
+    2.Routes needs Route as child
+    3.</HashRouter> will be the container for entire return of App.js
+
+
+<HashRouter>
+	<ul>
+		<li> <Link to="/"> Home </Link> </li>
+		<li> <Link to="/page1"> About Us </Link> </li>
+	<Routes>
+        <Route exact path = "/" element={ <Myhome /> } />             
+        <Route exact path="/page1" element={ <AboutUs /> } />
+	</Routes>
+</HashRouter>
+
+<thead> and <tbody> tags are mandatory in react & Angular.
