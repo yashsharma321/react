@@ -1,10 +1,10 @@
 const Mycustomer = () =>{
     return(
         <div className="container">
-        <h1>This is customer page</h1>
-        <p>jfb jhv w dvjkhsdi vdkjvh isd skdjhvi sdviushdv siv  sdvuhwi</p>
-        <p>jfb jhv w dvjkhsdi vdkjvh isd skdjhvi sdviushdv siv  sdvuhwi</p>
-        <p>jfb jhv w dvjkhsdi vdkjvh isd skdjhvi sdviushdv siv  sdvuhwi</p>
+            <h1>Customer List</h1>
+                <p className="item">Meghana</p>
+                <p className="item">Atharav</p>
+                <p className="item">Pimmi</p>
         </div>
     )
 }

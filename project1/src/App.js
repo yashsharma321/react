@@ -13,9 +13,9 @@ function App() {
         <ul>
            <li> <Link to="/" className='pagelink'> Home </Link> </li>
            <li> <Link to="/page1" className='pagelink'> About Us </Link> </li>
-           <li> <Link to="/page3" className='pagelink'> Contact Us </Link> </li>
-           <li> <Link to="/page4" className='pagelink'> Services </Link> </li>
-           <li> <Link to="/page5" className='pagelink'> Customer </Link> </li>      
+           <li> <Link to="/page2" className='pagelink'> Contact Us </Link> </li>
+           <li> <Link to="/page3" className='pagelink'> Services </Link> </li>
+           <li> <Link to="/page4" className='pagelink'> Customer </Link> </li>      
         </ul>
         
         <Routes>

@@ -48,3 +48,17 @@ li{
   font-size: 16px;
   list-style-type: none;
 }
+.pagelink{
+  color: white;
+  text-decoration: none;
+}
+.pagelink:+hover {
+  color: orange;
+}
+
+.item{
+  display: inline-block;
+  width: 33%;
+  font-size: 25px;
+  text-align: center;
+}

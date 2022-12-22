@@ -10,8 +10,8 @@ const ContactUs = () => {
     ]
     return(
         <div className="container">
-            <h1>Total file: {customer.length}</h1>
-                <table cellPadding={10} bordercolor="green">
+            <h1>Total customer: {customer.length}</h1>
+                <table align="center" cellPadding={10} bordercolor="green" cellspacing="0" width="70%" border={1}>
                     <thead>
                         <tr>
                             <th>Sl No.</th>
@@ -26,7 +26,7 @@ const ContactUs = () => {
                         customer.map((cinfo, index)=>{
                             return(
                                 <tr key={index}>
-                                    <td>{cinfo.index}</td>
+                                    <td>{index+1}</td>
                                     <td>{cinfo.name}</td>
                                     <td>{cinfo.age}</td>
                                     <td>{cinfo.city}</td>
