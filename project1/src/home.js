@@ -2,7 +2,7 @@
 
 function Myhome(){
     return(
-        <div>
+        <div  className="container">
             <h1>Welcome Home</h1>
             <p>The home is working...</p>
             <p>dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg</p>
