@@ -1,0 +1,50 @@
+    
+    React Project Setup Guide
+        1. install nodejs
+        2. npm install -g create-react-app
+        3. How to create new project
+            -> npx create-react-app project1
+            -> npm start
+
+----------------------------------------------------------------
+
+    React JSX Rules
+        1. inside a component if more than 1 jsx element (tags) is required then keep inside parent jsx element. 
+            Example 
+            <div>
+                <h1>About Us</h1>
+                <p>fjkb wfviuerh viuer viuhviu eviehv iveiuovnie rviuevh </p>
+                <p>fjkb wfviuerh viuer viuhviu eviehv iveiuovnie rviuevh </p>
+                <p>fjkb wfviuerh viuer viuhviu eviehv iveiuovnie rviuevh </p>
+                <p>fjkb wfviuerh viuer viuhviu eviehv iveiuovnie rviuevh </p>
+            </div>
+
+        2. inside a component if more than 1 jsx element (tags) is required then parent tag can be user defined also.
+            Example
+            <div>
+                <h1>About Us</h1>
+                <p>fjkb wfviuerh viuer viuhviu eviehv iveiuovnie rviuevh </p>
+                <p>fjkb wfviuerh viuer viuhviu eviehv iveiuovnie rviuevh </p>
+                <p>fjkb wfviuerh viuer viuhviu eviehv iveiuovnie rviuevh </p>
+                <p>fjkb wfviuerh viuer viuhviu eviehv iveiuovnie rviuevh </p>
+            </div>
+        
+        3. inside a component if more than 1 jsx element (tags) is required then the parent tag can be empty <></> tag also.
+            Example
+            <>
+                <h1>About Us</h1>
+                <p>fjkb wfviuerh viuer viuhviu eviehv iveiuovnie rviuevh </p>
+                <p>fjkb wfviuerh viuer viuhviu eviehv iveiuovnie rviuevh </p>
+                <p>fjkb wfviuerh viuer viuhviu eviehv iveiuovnie rviuevh </p>
+                <p>fjkb wfviuerh viuer viuhviu eviehv iveiuovnie rviuevh </p>
+            </>
+
+        4. inside a component if more than 1 jsx element (tags) is required then the parent tag can be [] array also.
+            Example
+            [
+                <h1>About Us</h1>,
+                <p>fjkb wfviuerh viuer viuhviu eviehv iveiuovnie rviuevh </p>,
+                <p>fjkb wfviuerh viuer viuhviu eviehv iveiuovnie rviuevh </p>,
+                <p>fjkb wfviuerh viuer viuhviu eviehv iveiuovnie rviuevh </p>,
+                <p>fjkb wfviuerh viuer viuhviu eviehv iveiuovnie rviuevh </p>
+            ]
