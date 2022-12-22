@@ -1,9 +1,11 @@
+import Myhome from "./home";
+
 function App() {
-  return (
-    [
-      <h1> Hello React... Array </h1>,
-      <h2> This if from H2 </h2>
-    ]
+    return (
+      <div>
+        <h1> App is working </h1>
+        <Myhome />
+      </div>
     );
 }
 
