@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom';
 const Header = () => {
     return(
-        <ul className="navbar">
+        <ul>
            <li> <Link to="/" className='pagelink'> Home </Link> </li>
            <li> <Link to="/about" className='pagelink'> About Us </Link> </li>
            <li> <Link to="/contact" className='pagelink'> Contact Us </Link> </li>

@@ -3,7 +3,7 @@ const TechnologyList = () => {
 
     return(
         <div className="container">
-        <h2>Total technologies - {technologies.length}</h2>
+        <h2>Total Technologies - {technologies.length}</h2>
         {
             technologies.map((technology,index)=>{
                 return(

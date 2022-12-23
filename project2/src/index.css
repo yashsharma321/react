@@ -26,12 +26,18 @@ ul li{
 }
 
 .container{
-  min-height: 300px;
-  padding: 50px 0 100px;;
+  min-height: 400px;
+  padding: 50px 0 100px;
+  width: 80%;
+  margin: auto;
   text-align: center;
 }
 .container h1{
   padding-top: 200px;
+}
+h2{
+  font-size: 36px;
+  color: red;
 }
 
 .pagelink{
@@ -40,7 +46,7 @@ ul li{
 }
 
 .pagelink:hover{
-  color: red;
+  color: chartreuse;
 }
 
 .item{
@@ -50,7 +56,7 @@ ul li{
   text-align: center;
 }
 
-.footer{
+footer{
   color: white;
   background-color: black;
   padding: 18px;

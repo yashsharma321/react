@@ -2,7 +2,7 @@ const Citynames = () =>{
     let cities = ["Kolkata", "Bangalore", "Pune", "Hyderabad", "Delhi", "Punjab", "Siliguri", "Darjeeling", "Bottle", "Chennai"];
     return(
         <div className="container">
-            <h2>Total cities - {cities.length}</h2>
+            <h2>Total Cities - {cities.length}</h2>
             {
                 cities.map((city, index)=>{
                     return(
