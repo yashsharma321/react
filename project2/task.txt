@@ -1,0 +1,21 @@
+1. Setup new project as 
+	
+	npx create-react-app project2
+	
+
+2. Create following components 
+	company.js
+	city.js
+	user.js 
+	product.js 
+	technology.js 
+	
+Note : create 10 records array in each component 
+	   single dimensional or array of objects 
+	   using map() display 
+	   
+3. install 
+	npm install react-router-dom
+4. setup routing for all above components
+5. on click of link respective component should load 
+   as we did in today class.
