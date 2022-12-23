@@ -30,6 +30,9 @@ ul li{
   padding: 50px 0 100px;;
   text-align: center;
 }
+.container h1{
+  padding-top: 200px;
+}
 
 .pagelink{
   color: white;
@@ -37,7 +40,7 @@ ul li{
 }
 
 .pagelink:hover{
-  color: chartreuse;
+  color: red;
 }
 
 .item{
@@ -45,4 +48,15 @@ ul li{
   width: 33%;
   font-size: 25px;
   text-align: center;
+}
+
+.footer{
+  color: white;
+  background-color: black;
+  padding: 18px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  margin:0;
 }

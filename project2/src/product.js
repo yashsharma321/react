@@ -1,11 +1,12 @@
 const ProductList = () =>{
-    let products = ["Mouse", "Keyboard", "Laptop", "Tablet", "Pencil", "Pen", "Sharpner", "Color Box", "Bottle", "Bag"];
+    let products = ["Mouse", "Keyboard", "Laptop", "Tablet", "Headset", "Earphone", "Printer", "UPS", "CPU", "Speaker"];
     return(
         <div className="container">
+            <h2>Total products - {products.length}</h2>
             {
                 products.map((product, index)=>{
                     return(
-                        <p kry={index}>{product}</p>
+                        <p key={index} className="item">{product}</p>
                     )
                 })
             }

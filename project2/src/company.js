@@ -1,12 +1,12 @@
 const CompanyList = () => {
-    let companies = ["a", "b", "c"];
+    let companies = ["Tata", "Reliance", "Kotak", "Infosys", "Bajaj", "HDFC", "Boat", "Wipro", "Zomato", "Bosch" ];
     return(
-        <div className="conatainer">
-            <h2>No. of Companies - {companies.length}</h2>
+        <div className="container">
+            <h2>Total Companies - {companies.length}</h2>
             {
                 companies.map((company, index)=>{
                     return(
-                        <p key={index}>{company}</p>
+                        <p key={index} className='item'>{company}</p>
                     )
                 })
             }
