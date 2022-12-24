@@ -48,6 +48,15 @@ li{
   font-size: 16px;
   list-style-type: none;
 }
+
+.item{
+  display: inline-block;
+  width: 33%;
+  font-size: 25px;
+  text-align: center;
+}
+
+
 .pagelink{
   color: white;
   text-decoration: none;
@@ -56,9 +65,16 @@ li{
   color: orange;
 }
 
-.item{
-  display: inline-block;
-  width: 33%;
-  font-size: 25px;
-  text-align: center;
+.datagrid{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.myuser{
+  background-color: purple;
+  padding: 10px;
+  color: white;
+  margin: 20px;
+  box-shadow: 20px 20px 10px grey;
+  text-align: left;
 }

@@ -6,6 +6,7 @@ import ContactUs from "./contact";
 import Ourservices from "./service";
 import Mycustomer from "./customer";
 import Pagefooter from "./footer";
+import Myuser from './user';
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
            <li> <Link to="/page2" className='pagelink'> Contact Us </Link> </li>
            <li> <Link to="/page3" className='pagelink'> Services </Link> </li>
            <li> <Link to="/page4" className='pagelink'> Customer </Link> </li>      
+           <li> <Link to="/page5" className='pagelink'> Props </Link> </li>      
         </ul>
         
         <Routes>
@@ -24,6 +26,7 @@ function App() {
           <Route exact path="/page2" element={ <ContactUs /> } />
           <Route exact path="/page3" element={ <Ourservices /> } />
           <Route exact path="/page4" element={ <Mycustomer /> } />
+          <Route exact path="/page5" element={ <Myuser />} />
         </Routes>
         
         <Pagefooter />
