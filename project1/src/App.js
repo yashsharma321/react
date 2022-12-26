@@ -7,21 +7,27 @@ import Ourservices from "./service";
 import Mycustomer from "./customer";
 import Pagefooter from "./footer";
 import Myuser from './user';
+import Hookpage1 from './hooks/hook1';
+import Hookpage2 from './hooks/hook2';
 
 function App() {
     return (
       <HashRouter>        
         <ul>
-           <li> <Link to="/" className='pagelink'> Home </Link> </li>
-           <li> <Link to="/page1" className='pagelink'> About Us </Link> </li>
-           <li> <Link to="/page2" className='pagelink'> Contact Us </Link> </li>
-           <li> <Link to="/page3" className='pagelink'> Services </Link> </li>
-           <li> <Link to="/page4" className='pagelink'> Customer </Link> </li>      
-           <li> <Link to="/page5" className='pagelink'> Props </Link> </li>      
+          <li> <Link to="/" className='pagelink'> Home </Link> </li>
+          <li> <Link to="/page1" className='pagelink'> About Us </Link> </li>
+          <li> <Link to="/page2" className='pagelink'> Contact Us </Link> </li>
+          <li> <Link to="/page3" className='pagelink'> Services </Link> </li>
+          <li> <Link to="/page4" className='pagelink'> Customer </Link> </li>      
+          <li> <Link to="/page5" className='pagelink'> Props </Link> </li>      
+          <li> <Link to="/page6" className='pagelink'> H-1 </Link> </li>      
+          <li> <Link to="/page7" className='pagelink'> H-2 </Link> </li>      
         </ul>
         
         <Routes>
-          <Route exact path = "/" element={ <Myhome /> } />             
+          <Route exact path ="/page6" element={ <Hookpage1 /> } />
+          <Route exact path ="/page7" element={ <Hookpage2 /> } />
+          <Route exact path ="/" element={ <Myhome /> } />             
           <Route exact path="/page1" element={ <AboutUs /> } />
           <Route exact path="/page2" element={ <ContactUs /> } />
           <Route exact path="/page3" element={ <Ourservices /> } />

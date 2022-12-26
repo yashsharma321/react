@@ -13,7 +13,7 @@ const ContactUs = () => {
     return(
         <div className="container">
             <h1>Total customer: {customer.length}</h1>
-                <table align="center" cellPadding={10} bordercolor="green" cellspacing="0" width="70%" border={1}>
+                <table align="center" cellPadding={10} bordercolor="green" cellSpacing="0" width="70%" border={1}>
                     <thead>
                         <tr>
                             <th>Sl No.</th>
