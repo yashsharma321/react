@@ -9,6 +9,7 @@ import Pagefooter from "./footer";
 import Myuser from './user';
 import Hookpage1 from './hooks/hook1';
 import Hookpage2 from './hooks/hook2';
+import Hookpage3 from './hooks/hook3';
 
 function App() {
     return (
@@ -21,10 +22,12 @@ function App() {
           <li> <Link to="/page4" className='pagelink'> Customer </Link> </li>      
           <li> <Link to="/page5" className='pagelink'> Props </Link> </li>      
           <li> <Link to="/page6" className='pagelink'> H-1 </Link> </li>      
-          <li> <Link to="/page7" className='pagelink'> H-2 </Link> </li>      
+          <li> <Link to="/page7" className='pagelink'> H-2 </Link> </li>   
+          <li> <Link to="/page8" className='pagelink'> H-3 </Link></li>   
         </ul>
         
         <Routes>
+          <Route exact path ="/page8" element= { <Hookpage3 /> } />
           <Route exact path ="/page6" element={ <Hookpage1 /> } />
           <Route exact path ="/page7" element={ <Hookpage2 /> } />
           <Route exact path ="/" element={ <Myhome /> } />             
