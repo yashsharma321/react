@@ -7,7 +7,7 @@ const Hookpage3 = () => {
     let[salary, pickSalary] = useState("");
     let[deptname, pickDept] = useState("");
     let[msg, updateMsg] = useState("");
-
+ 
     const save = () => {
         let newemp = {
             name : fullname,
@@ -15,20 +15,44 @@ const Hookpage3 = () => {
             salary : salary,
             dept : deptname
         }
-        updateEmp(emplist = [...emplist, newemp]);
-        updateMsg(fullname + " Added Successfully !");
+        
+        if(indexno == -1){
+            updateEmp(emplist = [...emplist, newemp]);
+            updateMsg(fullname + " Added Successfully !");
+        }
+        else{
+            emplist[indexno] = newemp;
+            updateEmp(emplist = [...emplist]);
+            updateMsg(fullname + " Updated Successfully !");
+            updateBtn("Add Employee");
+            updateIndex(-1);
+        }
+        
         pickName(""); pickMobile(""); pickSalary(""); pickDept("");
+    
     }
 
-    const deleteEmp = (index, name) => {
+        const deleteEmp = (index, name) => {
         emplist.splice(index,1);
         updateEmp(emplist = [...emplist]);
         updateMsg(name + " Deleted Successfully !")
     }
 
+    let[btntext, updateBtn] = useState("Add Employee");
+    let[indexno, updateIndex] = useState(-1);
+
+    const editEmp = (index) => {
+        pickName( emplist[index].name );
+        pickMobile( emplist[index].mobile );
+        pickSalary( emplist[index].salary );
+        pickDept( emplist[index].dept );
+        updateIndex(index);
+        updateBtn("Update Employee");
+    }
+    
     return(
         <div className="container">
-            <h1> Array of Object Add, List, Delete </h1>
+            <h1>Array of Object Add, List, Delete</h1>
             <p> जय श्री राम {msg} </p>
             <table align="left" cellPadding={10}>
                 <tbody>
@@ -70,7 +94,7 @@ const Hookpage3 = () => {
                     
                     <tr>
                         <td colSpan={2}>
-                            <button onClick={save}>Add Employee</button>
+                            <button onClick={save}>{btntext}</button>
                         </td>
                     </tr>
                 </tbody>
@@ -81,15 +105,15 @@ const Hookpage3 = () => {
                 <thead>
                     <tr>
                         <th>Emp Id</th>
-                        <th>Full Name</th>
-                        <th>Mobile No</th>
+                        <th>Name</th>
+                        <th>Mobile</th>
                         <th>Salary</th>
                         <th>Department</th>
                         <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
-                    { //bind() is used when we pass amy argument
+                    { // bind() is used when we pass any argument
                         emplist.map((emp, index)=>{
                             return(
                                 <tr key={index}>
@@ -99,7 +123,8 @@ const Hookpage3 = () => {
                                     <td>{emp.salary}</td>
                                     <td>{emp.dept}</td>
                                     <td>
-                                        <button onClick={deleteEmp.bind(this,index, emp.name)}>Delete</button>
+                                        <button onClick={editEmp.bind(this, index)}>Edit</button>
+                                        <button onClick={deleteEmp.bind(this, index, emp.name)}>Delete</button>
                                     </td>
                                 </tr>
                             )
