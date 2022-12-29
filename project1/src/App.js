@@ -7,9 +7,12 @@ import Ourservices from "./service";
 import Mycustomer from "./customer";
 import Pagefooter from "./footer";
 import Myuser from './user';
+
 import Hookpage1 from './hooks/hook1';
 import Hookpage2 from './hooks/hook2';
 import Hookpage3 from './hooks/hook3';
+import Hookpage4 from './hooks/hook4';
+import Hookpage5 from './hooks/hook5';
 
 function App() {
     return (
@@ -24,9 +27,13 @@ function App() {
           <li> <Link to="/page6" className='pagelink'> H-1 </Link> </li>      
           <li> <Link to="/page7" className='pagelink'> H-2 </Link> </li>   
           <li> <Link to="/page8" className='pagelink'> H-3 </Link></li>   
+          <li> <Link to="/page9" className='pagelink'> H-4 </Link> </li>   
+          <li> <Link to="/page10/Bangalore" className='pagelink'> H-5 </Link></li>   
         </ul>
         
         <Routes>
+          <Route exact path ="/page10/:city" element= { <Hookpage5 /> } />
+          <Route exact path ="/page9" element= { <Hookpage4 /> } />
           <Route exact path ="/page8" element= { <Hookpage3 /> } />
           <Route exact path ="/page6" element={ <Hookpage1 /> } />
           <Route exact path ="/page7" element={ <Hookpage2 /> } />
@@ -41,7 +48,7 @@ function App() {
         <Pagefooter />
       </HashRouter>
     );
-}
+} // :city = colon represents variable
 
 export default App;
 

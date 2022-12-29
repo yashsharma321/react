@@ -71,10 +71,42 @@ li{
 }
 
 .myuser{
-  background-color: purple;
+  background-color: blueviolet;
   padding: 10px;
   color: white;
   margin: 20px;
-  box-shadow: 20px 20px 10px grey;
+  box-shadow: 10px 10px 10px grey;
   text-align: left;
+  padding-left: 30px;
+}
+
+.userblock{
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.userlist{
+  padding: 10px;
+  margin: 20px;
+  text-align: left;
+}
+
+.userinfo{
+  padding: 10px;
+  margin: 20px;
+}
+
+.userinfo table{
+  border: 5px dashed red;
+  padding: 10px;
+}
+
+.userinfo h2{
+  text-align: left;
+}
+
+.userlist p:hover{
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
 }

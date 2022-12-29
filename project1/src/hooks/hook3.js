@@ -7,6 +7,7 @@ const Hookpage3 = () => {
     let[salary, pickSalary] = useState("");
     let[deptname, pickDept] = useState("");
     let[msg, updateMsg] = useState("");
+    let[clr, updateClr] = useState("blue");
 
     const save = () => {
         let newemp = {
@@ -16,6 +17,7 @@ const Hookpage3 = () => {
             dept : deptname
         }
         updateEmp(emplist = [...emplist, newemp]);
+        updateClr("green");
         updateMsg(fullname + " Added Successfully !");
         pickName(""); pickMobile(""); pickSalary(""); pickDept("");
     }
@@ -23,13 +25,14 @@ const Hookpage3 = () => {
     const deleteEmp = (index, name) => {
         emplist.splice(index,1);
         updateEmp(emplist = [...emplist]);
+        updateClr("red");
         updateMsg(name + " Deleted Successfully !")
     }
 
     return(
         <div className="container">
             <h1> Array of Object Add, List, Delete </h1>
-            <p> जय श्री राम {msg} </p>
+            <p style={{color:clr}}> जय श्री राम {msg} </p>
             <table align="left" cellPadding={10}>
                 <tbody>
                     <tr>
