@@ -14,6 +14,8 @@ import Hookpage3 from './hooks/hook3';
 import Hookpage4 from './hooks/hook4';
 import Hookpage5 from './hooks/hook5';
 import Hookpage6 from './hooks/hook6';
+import Hookpage7 from './hooks/hook7';
+import Hookpage8 from './hooks/hook8';
 
 function App() {
     return (
@@ -31,9 +33,13 @@ function App() {
           <li> <Link to="/page9" className='pagelink'> H-4 </Link> </li>   
           <li> <Link to="/page10/Ganesh/MCA/Bangalore" className='pagelink'> H-5 </Link> </li>   
           <li> <Link to="/page11" className='pagelink'> Api1 </Link> </li>   
+          <li> <Link to="/page12" className='pagelink'> Api2 </Link> </li>   
+          <li> <Link to="/page13" className='pagelink'> Api3 </Link> </li>   
         </ul>
         
         <Routes>
+          <Route exact path ="/page13" element= { <Hookpage8 /> } />
+          <Route exact path ="/page12" element= { <Hookpage7 /> } />
           <Route exact path ="/page11" element= { <Hookpage6 /> } />
           <Route exact path ="/page10/:name/:edu/:city" element= { <Hookpage5 /> } />
           <Route exact path ="/page9" element= { <Hookpage4 /> } />
