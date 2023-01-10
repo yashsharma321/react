@@ -110,3 +110,9 @@ li{
   color: blue;
   text-decoration: underline;
 }
+
+.xyz{
+  margin: 20px;
+  font-size: 22px;
+  padding: 8px;
+}
