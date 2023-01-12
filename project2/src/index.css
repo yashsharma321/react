@@ -101,3 +101,8 @@ footer{
   font-size: medium;
   padding: 10px 20px;
 }
+
+.datagrid{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
