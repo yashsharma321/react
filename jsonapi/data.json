@@ -1,0 +1,19 @@
+{
+  "customerlist": [
+    {
+      "name": "Ganesh",
+      "mobile": "9999999999",
+      "city": "Bangalore",
+      "product": "Apple",
+      "id": 1
+    },
+    {
+      "name": "Mahesh",
+      "mobile": "8888888888",
+      "city": "Pune",
+      "product": "Mac",
+      "id": 2
+    }
+  ],
+  "booklist": []
+}

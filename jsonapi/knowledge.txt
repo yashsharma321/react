@@ -1,0 +1,11 @@
+open cmd on jsonapi folder and run:
+    npm install -g json-server
+
+Start the json server to get an API 
+    open cmd under jsonapi and run server
+    json-server --watch data.json --port 1234
+
+    JSON-SERVER will give us an API - API will be used as a bridge between frontend and backend.
+    
+    What are REST APIs? 
+    REST stands for Representational State Transfer. REST defines a set of functions like GET, PUT, DELETE, etc. that clients can use to access server data. Clients and servers exchange data using HTTP. The main feature of REST API is statelessness. Statelessness means that servers do not save client data between requests.
