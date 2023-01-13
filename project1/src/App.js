@@ -17,6 +17,7 @@ import Hookpage6 from './hooks/hook6';
 import Hookpage7 from './hooks/hook7';
 import Hookpage8 from './hooks/hook8';
 import Mycrud from './hooks/crud';
+import FormValidation from './hooks/validation';
 
 function App() {
     return (
@@ -37,9 +38,11 @@ function App() {
           <li> <Link to="/page12" className='pagelink'> Api2 </Link> </li>   
           <li> <Link to="/page13" className='pagelink'> Api3 </Link> </li>   
           <li> <Link to="/customer" className='pagelink'> Crud </Link> </li>   
+          <li> <Link to="/validation" className='pagelink'> Validation </Link></li>
         </ul>
         
         <Routes>
+          <Route exact path="/validation" element= { <FormValidation /> } />
           <Route exact path ="/customer" element= { <Mycrud/> } />
           <Route exact path ="/page13" element= { <Hookpage8 /> } />
           <Route exact path ="/page12" element= { <Hookpage7 /> } />
