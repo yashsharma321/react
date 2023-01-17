@@ -18,6 +18,7 @@ import Hookpage7 from './hooks/hook7';
 import Hookpage8 from './hooks/hook8';
 import Mycrud from './hooks/crud';
 import FormValidation from './hooks/validation';
+import EditRecord from './hooks/edituser';
 
 function App() {
     return (
@@ -42,6 +43,7 @@ function App() {
         </ul>
         
         <Routes>
+          <Route exact path="/edituser/:userid" element= { <EditRecord /> } /> // userid is a Router variable which gets its value from edituser.js and its value keeps changing as per user click. userid value will be captured in EditRecord component.
           <Route exact path="/validation" element= { <FormValidation /> } />
           <Route exact path ="/customer" element= { <Mycrud/> } />
           <Route exact path ="/page13" element= { <Hookpage8 /> } />
