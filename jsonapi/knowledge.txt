@@ -1,4 +1,6 @@
-open cmd on jsonapi folder and run:
+To install server
+    ----------------------------
+    open cmd on jsonapi folder and run:
     npm install -g json-server
 
 Start the json server to get an API 
@@ -9,3 +11,10 @@ Start the json server to get an API
     
     What are REST APIs? 
     REST stands for Representational State Transfer. REST defines a set of functions like GET, PUT, DELETE, etc. that clients can use to access server data. Clients and servers exchange data using HTTP. The main feature of REST API is statelessness. Statelessness means that servers do not save client data between requests.
+
+To install Bootstrap
+    ----------------------------
+    open cmd on project folder and run:
+        npm install bootstrap
+    come to index.js file and type 
+        import 'bootstrap/dist/css/bootstrap.css';

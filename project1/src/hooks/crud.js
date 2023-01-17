@@ -90,88 +90,92 @@ const Mycrud = () => {
 
     return(
         <div className='container'>
-            <br/>
-            <h2 align="center"> 
-                Crud Operation : {allcustomer.length} 
-            </h2>
-            <p align="center">
-                {msg}
-            </p>
-            <table align='left' cellPadding={10}>
-                <tbody>
-                    <tr>
-                        <th>Customer Name</th>
-                        <td>
-                            <input type="text" 
-                            onChange={obj=>pickName(obj.target.value)}
-                            value={fullname}/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Mobile No</th>
-                        <td>
-                            <input type="text"
-                            onChange={obj=>pickNumber(obj.target.value)} 
-                            value={mobileno}/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>City Name</th>
-                        <td>
-                            <input type="text"
-                            onChange={obj=>pickCity(obj.target.value)} 
-                            value={cityname}/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Product Name</th>
-                        <td>
-                            <input type="text"
-                            onChange={obj=>pickProduct(obj.target.value)} 
-                            value={productname}/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th colSpan={2}>
-                            <button onClick={save}> {mybtn} </button>
-                        </th>
-                    </tr>
-                </tbody>
-
-            </table>
-
-            <table align='right' cellPadding={10}>
-                <thead>
-                    <tr>
-                        <th>Customer id</th>
-                        <th>Name</th>
-                        <th>Mobile</th>
-                        <th>City</th>
-                        <th>Product</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        allcustomer.map((customer, index)=>{
-                            return(
-                                <tr key={index}>
-                                    <td> {customer.id} </td>
-                                    <td> {customer.name} </td>
-                                    <td> {customer.mobile} </td>
-                                    <td> {customer.city} </td>
-                                    <td> {customer.product} </td>
-                                    <td> 
-                                        <button onClick={editUser.bind(this, index)}>Edit</button> 
-                                        <button onClick={deleteUser.bind(this, customer.id, customer.name)}> Delete </button> 
-                                        <Link to = {`/edituser/${customer.id}`}>Edit</Link> 
-                                    </td>
-                                </tr>
-                            )
-                        })
-                    }
-                </tbody>
-            </table>
+            <div className='row'>
+                <div className='col-lg-3'>
+                    <table className='table table-bordered'>
+                        <tbody>
+                            <tr>
+                                <th>Customer Name</th>
+                                <td>
+                                    <input type="text" 
+                                    onChange={obj=>pickName(obj.target.value)}
+                                    value={fullname}/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Mobile No</th>
+                                <td>
+                                    <input type="text"
+                                    onChange={obj=>pickNumber(obj.target.value)} 
+                                    value={mobileno}/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>City Name</th>
+                                <td>
+                                    <input type="text"
+                                    onChange={obj=>pickCity(obj.target.value)} 
+                                    value={cityname}/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Product Name</th>
+                                <td>
+                                    <input type="text"
+                                    onChange={obj=>pickProduct(obj.target.value)} 
+                                    value={productname}/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th colSpan={2}>
+                                    <button onClick={save}> {mybtn} </button>
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div className='col-lg-9'>
+                    <h2 align="center"> 
+                        Crud Operation : {allcustomer.length} 
+                    </h2>
+                    <p align="center">
+                        {msg}
+                    </p>
+                    <table className='table table-bordered'>
+                        <thead>
+                            <tr>
+                                <th>id</th>
+                                <th>Name</th>
+                                <th>Mobile</th>
+                                <th>City</th>
+                                <th>Product</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                allcustomer.map((customer, index)=>{
+                                    return(
+                                        <tr key={index}>
+                                            <td> {customer.id} </td>
+                                            <td> {customer.name} </td>
+                                            <td> {customer.mobile} </td>
+                                            <td> {customer.city} </td>
+                                            <td> {customer.product} </td>
+                                            <td> 
+                                                <button onClick={editUser.bind(this, index)}>Edit</button> 
+                                                <button onClick={deleteUser.bind(this, customer.id, customer.name)}> Delete </button> 
+                                                <Link to = {`/edituser/${customer.id}`}>Edit</Link> 
+                                            </td>
+                                        </tr>
+                                    )
+                                })
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     )
 }
