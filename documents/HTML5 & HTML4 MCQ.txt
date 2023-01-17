@@ -1,0 +1,750 @@
+1) HTML stands for -
+
+A.
+HighText Machine Language
+
+B.
+HyperText and links Markup Language
+
+C.
+HyperText Markup Language
+
+D.
+None of these
+Answer: C
+
+2) The correct sequence of HTML tags for starting a webpage is -
+
+A.
+Head, Title, HTML, body
+
+B.
+HTML, Body, Title, Head
+
+C.
+HTML, Head, Title, Body
+
+D.
+HTML, Body, Head, Title
+Answer: C
+
+3) Which of the following tag is used to mark a begining of paragraph ?
+
+A.	
+<TD>
+
+B.	
+<br>
+
+C.	
+<TR>
+
+D.	
+<P>
+Answer: D
+
+4)Correct HTML tag for the largest heading is -
+
+A.	
+<head>
+
+B.	
+<h6>
+
+C.	
+<heading>
+
+D.	
+<h1>
+Answer: D
+
+5)The attribute of <form> tag -
+
+A.	
+Method
+
+B.	
+Action
+
+C.	
+Both (a)&(b)
+
+D.	
+None of these
+Answer: C
+
+6)Which of the following is a container?
+
+A.	
+<SELECT>
+
+B.	
+<BODY>
+
+C.	
+<INPUT>
+
+D.	
+Both (a) and (b)
+Answer: D
+
+7)<Base> tag is designed to appear only between -
+
+A.	
+<HEAD>
+
+B.	
+<TITLE>
+
+C.	
+<BODY>
+
+D.	
+<FORM>
+Answer: A
+
+8)How can you open a link in a new browser window?
+
+A.	
+< a href = "url" target = "new">
+
+B.	
+<a href = "url" target= "_blank">
+
+C.	
+<a href = "url".new>
+
+D.	
+<a href = "url" target ="open">
+Answer: B
+
+9)The tag used to create a new list item and also include a hyperlink is -
+
+A.	
+<LI>
+
+B.	
+<DL>
+
+C.	
+<DD>
+
+D.	
+<UL>
+Answer: A
+
+10)Can the element <First> be replaced with <first> -
+
+A.	
+No, they represent different elements altogether
+
+B.	
+Both are same
+
+C.	
+First is correct only
+
+D.	
+first is only correct
+Answer: B
+
+11)The latest HTML standard is -
+
+A.	
+XML
+
+B.	
+SGML
+
+C.	
+HTML 4.0
+
+D.	
+HTML 5.0
+Answer: D
+
+12)What is the correct HTML for adding a background color?
+
+A.	
+<background>yellow<Background>
+
+B.	
+<body color = "yellow">
+
+C.	
+<body bg color = "yellow">
+
+D.	
+<body bg ="yellow">
+Answer: C
+
+13)Main container for <TR>, <TD> and <TH> is -
+
+A.	
+<TABLE>
+
+B.	
+<GROUP>
+
+C.	
+<DATA>
+
+D.	
+All of these
+Answer: A
+
+14)How can you make an e-mail link?
+
+A.	
+<mail href +"xxx@y.com">
+
+B.	
+<a href ="mail to: xxx@y.com">
+
+C.	
+<a href = "xxx@y.com">
+
+D.	
+Both (b) and (c)
+Answer: B
+
+15)Which tag creates a number/order list?
+
+A.	
+<UL>
+
+B.	
+<OL>
+
+C.	
+<OT>
+
+D.	
+None of these
+Answer: B
+
+16)Symbol used at the beginning of the HREF text is -
+
+A.	
+#
+
+B.	
+$
+
+C.	
+&
+
+D.	
+^
+Answer: A
+
+17)Which of the following tag is used to create a combo box (or drop-down box)?
+
+A.
+<list>
+
+B.
+<select>
+
+C.
+<input type = "dropdown">
+
+D.
+<ul>
+Answer: B
+
+18)How to create a checkbox in HTML?
+
+A.
+<input type = "checkbox">
+
+B.
+<input type = "button">
+
+C.
+<checkbox>
+
+D.
+<input type = "check">
+Answer: A
+
+19)Which of the following tag is used to add rows in the table?
+
+A.
+<td> and </td>
+
+B.
+<th> and </th>
+
+C.
+<tr> and </tr>
+
+D.
+None of the above
+Answer: C
+
+20)The <hr> tag in HTML is used for -
+
+A.
+new line
+
+B.
+vertical ruler
+
+C.
+new paragraph
+
+D.
+horizontal ruler
+Answer: D
+
+21) Which of the following attribute is used to provide a unique name to an element?
+
+A.
+class
+
+B.
+id
+
+C.
+type
+
+D.
+None of the above
+Answer: B
+
+22)Which of the following HTML tag is used to display the text with scrolling effect?
+
+A.
+<marquee>
+
+B.
+<scroll>
+
+C.
+<div>
+
+D.
+None of the above
+Answer: A
+
+23)Which of the following HTML tag is the special formatting tag?
+
+A.
+<p>
+
+B.
+<b>
+
+C.
+<pre>
+
+D.
+None of the above
+Answer: C
+
+24)Which of the following is the correct way to send mail in HTML?
+
+A.
+<a href = "mailto: xy@y">
+
+B.
+<a href = "xy@y">
+
+C.
+<mail xy@y</mail>
+
+D.
+None of the above
+Answer: A
+
+25)How to insert a background image in HTML?
+
+A.
+<body background = "img.png">
+
+B.
+<img background = "img.png">
+
+C.
+<bg-image = "img.png">
+
+D.
+None of the above
+Answer: A
+
+26)What are the types of unordered or bulleted list in HTML?
+
+A.
+disc, square, triangle
+
+B.
+polygon, triangle, circle
+
+C.
+disc, circle, square
+
+D.
+All of the above
+Answer: C
+
+27)Which of the following HTML attribute is used to define inline styles?
+
+A.
+style
+
+B.
+type
+
+C.
+class
+
+D.
+None of the above
+Answer: A
+
+28)An HTML program is saved by using the ____ extension.
+
+A.
+.ht
+
+B.
+.html
+
+C.
+.hml
+
+D.
+None of the above
+Answer: B
+
+29)In HTML5, which of the following tag is used to initialize the document type?
+
+A.
+<Doctype HTML>
+
+B.
+<\Doctype html>
+
+C.
+<Doctype>
+
+D.
+<!DOCTYPE html>
+Answer: D
+
+30)Which of the following is the correct way to change the font face in HTML?
+
+A.
+<font name = "Calibri"> ……… </font>
+
+B.
+<font face = "Calibri"> ……… </font>
+
+C.
+<font = "Calibri"> ……… </font>
+
+D.
+None of the above
+Answer: B
+
+31)Increasing the cellpadding means __________
+
+A.
+Increase the softness of your site
+
+B.
+Increase the space between cells
+
+C.
+Increase the distance between cell and content
+
+D.
+All of the above
+Answer: C
+
+32)Gif and jpg are the two main types of what?
+
+A.
+animated effects
+
+B.
+videos
+
+C.
+images
+
+D.
+None of the above
+Answer: C
+
+33)Any target specified in the BASE element can be overridden on a case-by-case basis by specifying a different target in different forms
+
+A.
+Anchor
+
+B.
+Imagemap
+
+C.
+Link
+
+D.
+All of the above
+Answer: D
+
+34)The <small> and <big> tags are special in what way?
+
+A.
+They are for images only
+
+B.
+They work on anything
+
+C.
+They can be repeated
+
+D.
+None of the above
+Answer: C
+
+35)Choose the correct HTML tag to left-align the content inside a table cell -
+
+A.
+<td leftalign>
+
+B.
+<td align=”left”>
+
+C.
+<td valign=”left”>
+
+D.
+<td=”left”>
+Answer: B
+
+36)The tag which allows some Web server search engines to search your Web page -
+
+A.
+<SEARCH>
+
+B.
+<ISINDEX>
+
+C.
+<HEAD>
+
+D.
+<LINK>
+
+Answer : B
+
+37)If you create an HTML page in word processor,
+
+A.
+save it with binary file
+
+B.
+save it with WMF file
+
+C.
+save it with ASCII text file
+
+D.
+All of the above
+Answer : C
+
+38)Generally, there are
+
+A.
+4 headers in most HTML page
+
+B.
+5 headers in most HTML page
+
+C.
+6 headers in most HTML page
+
+D.
+7 headers in most HTML page
+Answer : C
+
+39)Which property tells how many rows a cell should span?
+
+A.
+colspan=n
+
+B.
+rowspan=n
+
+C.
+Both (A) and (B)
+
+D.
+None of the above
+Answer : B
+
+40)Why should you add alternative text to your images?
+
+A.
+So the user can save the image using the text as a name
+
+B.
+So the users can get an idea of what the image is before
+
+C.
+In case the user wishes to load a different picture
+
+D.
+All of the above
+Answer : B
+
+41)The MIME text file is saved with -
+
+A.
+CSS extension
+
+B.
+HTML extension
+
+C.
+HMT extension
+
+D.
+None of the above
+Answer : B
+
+42)To change the size of an image in HTML, use
+
+A.
+Pliers
+
+B.
+Bigger and smaller
+
+C.
+Top and bottom
+
+D.
+Height and width
+Answer : D
+
+43)What does vlink mean?
+
+A.
+active link
+
+B.
+visible link
+
+C.
+visited link
+
+D.
+None of the above
+Answer : C
+
+44)Who is making the Web standards?
+
+A.
+The World Wide Web Consortium
+
+B.
+Internet Explorer
+
+C.
+Netscape Navigator
+
+D.
+None of the above
+Answer : A
+
+45)What is the most important tool for adding color to certain areas of the page rather than the entire background?
+
+A.
+Fonts
+
+B.
+Image
+
+C.
+Tables
+
+D.
+All of the above
+Answer : C
+
+46)Which of these is not valid HTML?
+
+A.
+<fontface=”verdana”>
+
+B.
+<font face=”verdana”>
+
+C.
+<font face=”verdana, arial”>
+
+D.
+All of the above
+Answer : A
+
+47)The <A> tag acts almost like the
+
+A.
+<P>
+
+B.
+<B>
+
+C.
+<U>
+
+D.
+<I>
+Answer : A
+
+48)The tags which are required for every HTML page you create
+
+A.
+Document
+
+B.
+Comment
+
+C.
+Container
+
+D.
+None of the above
+Answer : A
+
+49)The default value of BORDER attribute is
+
+A.
+1 pixel
+
+B.
+2 pixel
+
+C.
+3 pixel
+
+D.
+None of the above
+Answer : A
+
+50)Why should you specify a background color if you are using an image for the actual background of your page?
+
+A.
+So the text shows up better
+
+B.
+In case the image doesn’t fit right
+
+C.
+The background color will be shown until the image loads
+
+D.
+None of the above
+Answer : C
