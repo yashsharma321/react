@@ -7,6 +7,8 @@ import TechnologyList from './technology';
 import Home from './home';
 import Footer from './footer';
 import TransportDetails from './transport';
+import Crud from './crud';
+import Edituser from './crudUpdate';
 
 function App() {
   return (  
@@ -19,9 +21,12 @@ function App() {
         <li> <Link to="/product" className='pagelink'> Product </Link></li>
         <li> <Link to="/technology" className='pagelink'> Technology </Link></li>
         <li> <Link to="/transport" className='pagelink'> Transport </Link></li>
+        <li> <Link to="/crud" className='pagelink'> CRUD </Link></li>
       </ul>
 
       <Routes>
+        <Route exact path="/edituser/:userid" element = { <Edituser /> } />
+        <Route exact path="/crud" element={ <Crud /> } />
         <Route exact path="/transport" element={ <TransportDetails /> } />
         <Route exact path="/" element={ <Home /> } />
         <Route exact path="/company" element={ <CompanyList /> }/>

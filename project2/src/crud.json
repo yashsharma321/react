@@ -1,0 +1,18 @@
+{
+  "userlist": [
+    {
+      "name": "Ramesh",
+      "mobile": "8888888888",
+      "email": "ramesh@gmail.com",
+      "address": "abc xyz ",
+      "id": 1
+    },
+    {
+      "name": "Mahesh",
+      "mobile": "9898569856",
+      "email": "dinesh@gmail.com",
+      "address": "Siliguri",
+      "id": 2
+    }
+  ]
+}
