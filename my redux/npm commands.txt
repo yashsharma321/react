@@ -6,3 +6,38 @@ npm install react-redux
 Redux is made to maintain the entire project data in one place.
 
 The state of our whole application is stored in an object tree within a single store. Maintain your whole application state in a single object which would be managed by the Redux store.
+
+------- code for each reducers -------
+
+const ApiList/BookList/UserList = (state=[], action)=>{ 
+  var dataArray = Object.assign([], state);
+  
+  if(action.type==="saveapi/addbook/adduser"){
+    dataArray = action.alldata; // assigning the complete array data
+    dataArray.push(action.bookinfo); 
+    dataArray.push(action.name);
+  }
+  if(action.type==="deleteuser"){
+    dataArray.splice(action.bookindex, 1);
+  }
+  return dataArray;
+}
+
+------------------------------------------------
+
+
+-------> code for main reducer <-------
+
+import {combineReducers} from "redux";
+import BookList from "./bookreducer";  
+// ...import all the reducers
+
+const MainReducer = combineReducers ({
+  BookList, UserList, ApiList
+});
+
+export default MainReducer;
+
+------------------------------------------------
+
+
