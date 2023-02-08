@@ -1,0 +1,8 @@
+npm install bootstrap
+npm install react-router-dom
+npm install redux
+npm install react-redux
+
+Redux is made to maintain the entire project data in one place.
+
+The state of our whole application is stored in an object tree within a single store. Maintain your whole application state in a single object which would be managed by the Redux store.
