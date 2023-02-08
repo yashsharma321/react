@@ -41,3 +41,48 @@ export default MainReducer;
 ------------------------------------------------
 
 
+
+
+-------> code for react component <-------
+
+import {useDispatch, useSelector} fron 'react-redux';
+
+const Myuser = () =>{
+  let dispatch = useDispatch();
+  let userlist = useSelector(state => state.UserList); // to fetch data from redux
+  
+  const save = () =>{
+    var dispatchData = {type:"adduser", name:fullname};
+    dispatch(dispatchData); // to send data to redux
+  }
+  
+  const deleteUser = (index) =>{
+    var dispatchData = {type:"deleteuser", userindex:index};
+    dispatch(dispatchData);
+  }
+  
+} 
+
+------------------------------------------------
+
+
+-------> code for react store <-------
+
+import { legacy_createStore as createStore} from 'redux';
+import MainReducer from './mainreducer'
+
+const MyStore = createStore(MainReducer);
+
+export default MyStore;
+
+------------------------------------------------
+
+-------> code for index.js <-------
+
+//import provider and MyStore
+
+<Provider store={MyStore}>
+  <App />
+</Provider>
+
+------------------------------------------------
