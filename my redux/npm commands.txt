@@ -96,3 +96,26 @@ export default MyStore;
 </Provider>
 
 ------------------------------------------------
+
+1. Component
+2. reducers for handling different types of data (array, objects etc)
+3. useDispatch - "react-redux" (send react to redux)
+4. Through action dispatch to reducer
+5. useSelector - "react-redux" (receive redux to react)
+
+
+store is like a shop.
+reducers are like shopkeepers.
+action is like a customer.
+
+React-Redux is the official UI Binding Library for React. It provides binding to use React and Redux together in an application. It helps us to communicate react to redux store to dispatch and bring back data.
+
+An action is dispatched with an intention to cause change. This change is performed by the reducer. Reducer is the only way to change states in Redux, making it more predictable, centralised and debuggable.
+
+Actions only tell what to do, but they don’t tell how to do, so reducers are the pure functions that take the current state and action and return the new state and tell the store how to do.
+
+To update the state of your app , you need to let Redux know about that with an action. Not allowed to directly update the state object.
+
+In a typical Redux app there is just a single store with a single Root Reducing function.
+-As Your app grows, you split the Root Reducer in to smaller reducers independently operating on the different parts of the state tree.
+-this is exactly like how there is just one root component in a react app, but is composed out of many small components.
